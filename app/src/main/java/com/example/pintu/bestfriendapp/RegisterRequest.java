@@ -30,4 +30,9 @@ public class RegisterRequest extends StringRequest {
         params.put("username",Username);
         params.put("password",Password);
     }
+
+    @Override
+    public Map<String, String> getParams() {
+        return params;
+    }
 }
