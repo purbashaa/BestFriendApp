@@ -19,7 +19,7 @@ public class login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-
+// To get values from user
         UserName =(EditText) findViewById(R.id.etlogin);
         Password =(EditText) findViewById(R.id.etpassword);
         Login =(Button) findViewById(R.id.btLogin);
