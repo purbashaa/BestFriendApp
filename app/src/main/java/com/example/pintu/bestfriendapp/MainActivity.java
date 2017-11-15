@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText Userid;
 
 
+    private Button letsTalkbutton;
     private Button logoutbutton;
 
     @Override
@@ -49,9 +50,19 @@ public class MainActivity extends AppCompatActivity {
         Hobby2.setText(VHobby2);
         Userid.setText(VUsername);
 
+        letsTalkbutton = (Button) findViewById(R.id.btTalk);
+        letsTalkbutton.setOnClickListener(new View.OnClickListener() {
+                                              @Override
+                                              public void onClick(View v) {
+                                                  Intent letsTalkbuttonIntent =
+                                                          new Intent(MainActivity.this, UserInteraction.class);
+                                                  MainActivity.this.startActivity(letsTalkbuttonIntent);
+
+                                              }
+                                          });
 
 
-        logoutbutton = (Button) findViewById(R.id.btLogout);
+                logoutbutton = (Button) findViewById(R.id.btLogout);
         logoutbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

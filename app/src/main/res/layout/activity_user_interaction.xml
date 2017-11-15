@@ -26,7 +26,10 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
 
 
     <TextView
@@ -44,7 +47,9 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintVertical_bias="0.09"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
     <TextView
         android:id="@+id/tv3"
@@ -61,26 +66,25 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177" />
+        app:layout_constraintVertical_bias="0.177"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
 
-    <EditText
-        android:id="@+id/et1"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Name"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="@+id/tv1"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="@+id/tv1"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintVertical_bias="0.177" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintLeft_toLeftOf="@+id/tv3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.164" />
 
 
     <TextView
@@ -98,25 +102,25 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.228" />
+        app:layout_constraintVertical_bias="0.228"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
-    <EditText
-        android:id="@+id/et2"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintLeft_toLeftOf="@+id/tv3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235" />
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.215" />
+
 
 
     <TextView
@@ -134,25 +138,25 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.341" />
+        app:layout_constraintVertical_bias="0.341"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
-    <EditText
-        android:id="@+id/et3"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintLeft_toLeftOf="@+id/tv3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285" />
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.275" />
+
 
     <TextView
         android:id="@+id/tv6"
@@ -169,26 +173,26 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286" />
+        app:layout_constraintVertical_bias="0.286"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
 
-    <EditText
-        android:id="@+id/et4"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintLeft_toLeftOf="@+id/tv3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.339" />
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.33" />
+
 
     <TextView
         android:id="@+id/tv7"
@@ -205,25 +209,24 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.405" />
+        app:layout_constraintVertical_bias="0.405"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
-    <EditText
-        android:id="@+id/et5"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintLeft_toLeftOf="@+id/tv3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/et3"
-        app:layout_constraintVertical_bias="0.152" />
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.396" />
 
     <TextView
         android:id="@+id/tv8"
@@ -240,25 +243,25 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.472" />
+        app:layout_constraintVertical_bias="0.472"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
-    <EditText
-        android:id="@+id/et6"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+    <Spinner
+        android:id="@+id/spinner6"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintLeft_toLeftOf="@+id/tv3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/et3"
-        app:layout_constraintVertical_bias="0.241" />
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.464" />
+
 
     <TextView
         android:id="@+id/tv9"
@@ -275,26 +278,24 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.523" />
+        app:layout_constraintVertical_bias="0.523"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
-    <EditText
-        android:id="@+id/et7"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+    <Spinner
+        android:id="@+id/spinner7"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintLeft_toLeftOf="@+id/tv3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/et3"
-        app:layout_constraintVertical_bias="0.316" />
-
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.518" />
     <TextView
         android:id="@+id/tv10"
         android:layout_width="wrap_content"
@@ -310,25 +311,24 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.579" />
+        app:layout_constraintVertical_bias="0.579"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
-    <EditText
-        android:id="@+id/et8"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+    <Spinner
+        android:id="@+id/spinner8"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintLeft_toLeftOf="@+id/tv3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/et3"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.573" />
 
 
     <TextView
@@ -343,25 +343,24 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
-    <EditText
-        android:id="@+id/et9"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+    <Spinner
+        android:id="@+id/spinner9"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintLeft_toLeftOf="@+id/tv3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/et3"
-        app:layout_constraintVertical_bias="0.471" />
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.633" />
 
     <TextView
         android:id="@+id/tv12"
@@ -378,25 +377,25 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.698" />
+        app:layout_constraintVertical_bias="0.698"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
-    <EditText
-        android:id="@+id/et10"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+    <Spinner
+        android:id="@+id/spinner10"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintLeft_toLeftOf="@+id/tv3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/et3"
-        app:layout_constraintVertical_bias="0.564" />
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.695" />
+
 
     <TextView
         android:id="@+id/tv13"
@@ -413,25 +412,24 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751" />
+        app:layout_constraintVertical_bias="0.751"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
-    <EditText
-        android:id="@+id/et11"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+    <Spinner
+        android:id="@+id/spinner11"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintLeft_toLeftOf="@+id/tv3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/et3"
-        app:layout_constraintVertical_bias="0.641" />
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.75" />
 
     <TextView
         android:id="@+id/tv14"
@@ -448,25 +446,25 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.811" />
+        app:layout_constraintVertical_bias="0.811"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
-    <EditText
-        android:id="@+id/et12"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+    <Spinner
+        android:id="@+id/spinner12"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintLeft_toLeftOf="@+id/tv3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/et3"
-        app:layout_constraintVertical_bias="0.731" />
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.81" />
+
 
     <TextView
         android:id="@+id/tv15"
@@ -483,25 +481,24 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.868" />
+        app:layout_constraintVertical_bias="0.868"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
-    <EditText
-        android:id="@+id/et13"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+    <Spinner
+        android:id="@+id/spinner13"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintLeft_toLeftOf="@+id/tv3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/et3"
-        app:layout_constraintVertical_bias="0.904" />
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.869" />
 
     <TextView
         android:id="@+id/tv16"
@@ -518,29 +515,37 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.935" />
+        app:layout_constraintVertical_bias="0.935"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
-    <EditText
-        android:id="@+id/et14"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+    <Spinner
+        android:id="@+id/spinner14"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintLeft_toLeftOf="@+id/tv3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner13" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
+        android:text="Calculate My Stress"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/et3"
-        app:layout_constraintVertical_bias="0.805" />
-
-
-
-
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </android.support.constraint.ConstraintLayout>
