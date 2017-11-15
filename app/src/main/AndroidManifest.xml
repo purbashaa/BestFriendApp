@@ -20,7 +20,7 @@
         </activity>
         <activity android:name=".createAccount" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".UserInteraction"></activity>
+        <activity android:name=".UserInteraction" />
     </application>
 
 </manifest>
