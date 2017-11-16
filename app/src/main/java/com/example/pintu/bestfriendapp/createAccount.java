@@ -48,6 +48,7 @@ public class createAccount extends AppCompatActivity {
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
+                //accepting input from user
                final String VName = Name.getText().toString();
                 final int VAge = Integer.parseInt(Age.getText().toString());
                 final String VCity = City.getText().toString();
@@ -64,7 +65,7 @@ public class createAccount extends AppCompatActivity {
                             JSONObject jsonResponse = new JSONObject(response);
 
                             boolean success = jsonResponse.getBoolean("success");
-
+//                            //activity after successful insert of user data in database in RegisterRequest class
                             if (success) {
                                 Intent intent = new Intent(createAccount.this, login.class);
                                 createAccount.this.startActivity(intent);
@@ -77,6 +78,7 @@ public class createAccount extends AppCompatActivity {
                                         .show();
                             }
                         } catch (JSONException e) {
+
                             e.printStackTrace();
                         }
 

@@ -22,6 +22,7 @@ public class login extends AppCompatActivity {
     private EditText Password;
     private Button Login;
     private Button CreateNewAccount;
+    private ProjectModel person;
 
 
     @Override
@@ -47,6 +48,7 @@ public class login extends AppCompatActivity {
         Login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                //user input received from login screen
                 final String VIUsername = UserName.getText().toString();
                 final String VIPassword = Password.getText().toString();
 
@@ -56,8 +58,9 @@ public class login extends AppCompatActivity {
                         try {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
+                            //activity after existance of valid user account
                             if (success) {
-
+                                //collects data from php file through LoginRequest class
                                 String VName = jsonResponse.getString("name");
                                 int VAge = jsonResponse.getInt("age");
                                 String VCity = jsonResponse.getString("city");
@@ -65,6 +68,7 @@ public class login extends AppCompatActivity {
                                 String VHobby2 = jsonResponse.getString("hobby_2");
                                 String VUsername = jsonResponse.getString("username");
 
+                                //sending received data from database to MainActivity class
                                 Intent intent = new Intent(login.this, MainActivity.class);
                                 intent.putExtra("name",VName);
                                 intent.putExtra("age",VAge);
@@ -75,6 +79,7 @@ public class login extends AppCompatActivity {
 
                                 login.this.startActivity(intent);
                             }
+                            //activity after existance of invalid user account
                             else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(login.this);
                                 builder.setMessage("Login Failed.")
@@ -89,7 +94,7 @@ public class login extends AppCompatActivity {
 
                     }
                 };
-
+               //calls LoginRequest class for database connectivity check.
                 LoginRequest loginRequest = new LoginRequest(VIUsername,VIPassword, responseListener );
                 RequestQueue queue = Volley.newRequestQueue(login.this);
                 queue.add(loginRequest);

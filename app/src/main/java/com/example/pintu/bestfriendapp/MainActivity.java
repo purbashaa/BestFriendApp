@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         Hobby2 =(EditText) findViewById(R.id.etHobby2);
         Userid =(EditText) findViewById(R.id.etUserid);
 
+        //receiving data after existing account check , Login.setOnClickListener
         Intent intent = getIntent();
         String VName = intent.getStringExtra("name");
         int VAge = intent.getIntExtra("age",-1);
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         String VHobby2 = intent.getStringExtra("hobby_2");
         String VUsername = intent.getStringExtra("username");
 
+        //Displaying user data received from database
         Name.setText(VName);
         Age.setText(VAge + "");
         City.setText(VCity);
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         Hobby2.setText(VHobby2);
         Userid.setText(VUsername);
 
+        //calls the UserInteraction class
         letsTalkbutton = (Button) findViewById(R.id.btTalk);
         letsTalkbutton.setOnClickListener(new View.OnClickListener() {
                                               @Override

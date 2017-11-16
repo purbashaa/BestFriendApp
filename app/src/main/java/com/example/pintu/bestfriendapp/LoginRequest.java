@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * Created by Pintu on 11/12/2017.
  */
-
+//connects and fetches user data from database using the php file.
 public class LoginRequest extends StringRequest{
     private static final String LOGIN_REQUEST_URL = "https://sonikashish.000webhostapp.com/FetchData.php";
     private Map<String, String> params;
