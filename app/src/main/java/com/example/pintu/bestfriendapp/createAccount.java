@@ -16,7 +16,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class createAccount extends AppCompatActivity {
-
+    private ProjectModel person;
     private EditText Name;
     private EditText Age;
     private EditText City;
@@ -43,19 +43,28 @@ public class createAccount extends AppCompatActivity {
 
         Register = (Button) findViewById(R.id.btRegister);
         cancelbutton = (Button) findViewById(R.id.btCancel);
-
+        person =new ProjectModel();
 
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 //accepting input from user
-               final String VName = Name.getText().toString();
+
+                person.setName(Name.getText().toString());
+                person.setAge(Integer.parseInt(Age.getText().toString()));
+                person.setCity(City.getText().toString());
+                person.setHobby1( Hobby1.getText().toString());
+                person.setHobby2(Hobby2.getText().toString());
+                person.setUsername(Userid.getText().toString());
+                person.setPassword(Password.getText().toString());
+
+               /*final String VName = Name.getText().toString();
                 final int VAge = Integer.parseInt(Age.getText().toString());
                 final String VCity = City.getText().toString();
                 final String VHobby1 = Hobby1.getText().toString();
                 final String VHobby2 = Hobby2.getText().toString();
                 final String VUsername = Userid.getText().toString();
-                final String VPassword = Password.getText().toString();
+                final String VPassword = Password.getText().toString(); */
 
                 Response.Listener<String> responseListener = new Response.Listener<String>(){
 
@@ -85,7 +94,8 @@ public class createAccount extends AppCompatActivity {
                     }
                 };
 
-                RegisterRequest registerRequest = new RegisterRequest(VName, VAge, VCity, VHobby1, VHobby2, VUsername,VPassword, responseListener );
+                RegisterRequest registerRequest = new RegisterRequest(person.getName(),person.getAge(),person.getCity(),
+                        person.getHobby1(),person.getHobby2(),person.getUsername(),person.getPassword(), responseListener );
                 RequestQueue queue = Volley.newRequestQueue(createAccount.this);
                 queue.add(registerRequest);
             }

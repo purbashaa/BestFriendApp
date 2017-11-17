@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText Hobby1;
     private EditText Hobby2;
     private EditText Userid;
+    private ProjectModel person;
 
 
     private Button letsTalkbutton;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        person = new ProjectModel();
 
 
         Name =(EditText) findViewById(R.id.etName);
@@ -37,20 +39,35 @@ public class MainActivity extends AppCompatActivity {
 
         //receiving data after existing account check , Login.setOnClickListener
         Intent intent = getIntent();
-        String VName = intent.getStringExtra("name");
+
+        person.setName( intent.getStringExtra("name"));
+        person.setAge(intent.getIntExtra("age",-1));
+        person.setCity(intent.getStringExtra("city"));
+        person.setHobby1(intent.getStringExtra("hobby_1"));
+        person.setHobby2(intent.getStringExtra("hobby_2"));
+        person.setUsername(intent.getStringExtra("username"));
+
+        /*String VName = intent.getStringExtra("name");
         int VAge = intent.getIntExtra("age",-1);
         String VCity = intent.getStringExtra("city");
         String VHobby1 = intent.getStringExtra("hobby_1");
         String VHobby2 = intent.getStringExtra("hobby_2");
-        String VUsername = intent.getStringExtra("username");
+        String VUsername = intent.getStringExtra("username");*/
 
         //Displaying user data received from database
-        Name.setText(VName);
+
+        Name.setText(person.getName());
+        Age.setText(person.getAge()+"");
+        City.setText(person.getCity());
+        Hobby1.setText(person.getHobby1());
+        Hobby2.setText(person.getHobby2());
+        Userid.setText(person.getUsername());
+        /*Name.setText(VName);
         Age.setText(VAge + "");
         City.setText(VCity);
         Hobby1.setText(VHobby1);
         Hobby2.setText(VHobby2);
-        Userid.setText(VUsername);
+        Userid.setText(VUsername);*/
 
         //calls the UserInteraction class
         letsTalkbutton = (Button) findViewById(R.id.btTalk);
