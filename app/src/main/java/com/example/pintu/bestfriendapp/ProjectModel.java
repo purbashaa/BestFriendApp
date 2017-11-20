@@ -8,6 +8,8 @@ import java.util.ArrayList;
 
 public class ProjectModel {
 
+        public ArrayList<Integer> questions;
+
         private String name;
                public void setName(String name) {
                this.name = name;
@@ -65,7 +67,7 @@ public class ProjectModel {
         }
 
 
-          public ArrayList<Integer> questions;
+
 
 
 
