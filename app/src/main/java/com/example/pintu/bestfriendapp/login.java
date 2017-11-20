@@ -36,6 +36,7 @@ public class login extends AppCompatActivity {
 
         Login =(Button) findViewById(R.id.btLogin);
         CreateNewAccount =(Button) findViewById(R.id.btCreateNwAccnt);
+        person=new ProjectModel();
 /*
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,8 +50,10 @@ public class login extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 //user input received from login screen
-                final String VIUsername = UserName.getText().toString();
-                final String VIPassword = Password.getText().toString();
+                person.setUsername(UserName.getText().toString());
+                person.setPassword(Password.getText().toString());
+                     //final String VIUsername = UserName.getText().toString();
+                     //final String VIPassword = Password.getText().toString();
 
                 Response.Listener<String> responseListener = new Response.Listener<String>(){
                     @Override
@@ -61,21 +64,36 @@ public class login extends AppCompatActivity {
                             //activity after existance of valid user account
                             if (success) {
                                 //collects data from php file through LoginRequest class
-                                String VName = jsonResponse.getString("name");
+
+                                person.setName(jsonResponse.getString("name"));
+                                person.setAge(jsonResponse.getInt("age"));
+                                person.setCity(jsonResponse.getString("city"));
+                                person.setHobby1(jsonResponse.getString("hobby_1"));
+                                person.setHobby2(jsonResponse.getString("hobby_2"));
+                                person.setUsername(jsonResponse.getString("username"));
+
+                               /* String VName = jsonResponse.getString("name");
                                 int VAge = jsonResponse.getInt("age");
                                 String VCity = jsonResponse.getString("city");
                                 String VHobby1 = jsonResponse.getString("hobby_1");
                                 String VHobby2 = jsonResponse.getString("hobby_2");
-                                String VUsername = jsonResponse.getString("username");
+                                String VUsername = jsonResponse.getString("username");*/
 
                                 //sending received data from database to MainActivity class
                                 Intent intent = new Intent(login.this, MainActivity.class);
-                                intent.putExtra("name",VName);
+                                intent.putExtra("name",person.getName());
+                                intent.putExtra("age",person.getAge());
+                                intent.putExtra("city",person.getCity());
+                                intent.putExtra("hobby_1",person.getHobby1());
+                                intent.putExtra("hobby_2",person.getHobby2());
+                                intent.putExtra("username",person.getUsername());
+
+                                /*intent.putExtra("name",VName);
                                 intent.putExtra("age",VAge);
                                 intent.putExtra("city",VCity);
                                 intent.putExtra("hobby_1",VHobby1);
                                 intent.putExtra("hobby_2",VHobby2);
-                                intent.putExtra("username",VUsername);
+                                intent.putExtra("username",VUsername);*/
 
                                 login.this.startActivity(intent);
                             }
@@ -95,7 +113,8 @@ public class login extends AppCompatActivity {
                     }
                 };
                //calls LoginRequest class for database connectivity check.
-                LoginRequest loginRequest = new LoginRequest(VIUsername,VIPassword, responseListener );
+                   //LoginRequest loginRequest = new LoginRequest(VIUsername,VIPassword, responseListener );
+                LoginRequest loginRequest = new LoginRequest(person.getUsername(),person.getPassword(), responseListener );
                 RequestQueue queue = Volley.newRequestQueue(login.this);
                 queue.add(loginRequest);
 

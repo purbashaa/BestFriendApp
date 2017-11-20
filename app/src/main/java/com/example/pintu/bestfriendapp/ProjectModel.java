@@ -65,10 +65,8 @@ public class ProjectModel {
         }
 
 
-          private ArrayList<Integer> questions;
-                  public void setQuestions(ArrayList<Integer> questions) {
-                       this.questions = questions;
-        }
+          public ArrayList<Integer> questions;
+
 
 
 

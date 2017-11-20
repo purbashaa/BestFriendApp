@@ -21,7 +21,6 @@
         <activity android:name=".createAccount" />
         <activity android:name=".MainActivity" />
         <activity android:name=".UserInteraction" />
-        <activity android:name=".FinalResponse"></activity>
     </application>
 
 </manifest>
